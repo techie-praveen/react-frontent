@@ -23,7 +23,7 @@ function Login() {
             );
 
             localStorage.setItem("token", response.data.token);
-            navigate("/dashboard");
+            navigate("/employees");
         } catch (err) {
             setError("Invalid username or password");
         }
